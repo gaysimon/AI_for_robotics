@@ -1,0 +1,15 @@
+
+On ESISAR's Linux PC, Python's libraries are managed through APT. As we cannot install softwares, we will create a virtual Python environment, then install required libraries with pip.
+
+
+$ python3 -m venv /tmp/test-venv
+$ source /tmp/test-venv/bin/activate
+
+$ python -m pip install --upgrade pip
+$ python -m pip install tensorflow
+$ python -m pip install --force-reinstall protobuf
+$ python -m pip install --force-reinstall tensorflow
+$ python -m pip install Pillow
+$ python -m pip insyall notebook
+
+$ jupyter notebook
